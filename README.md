@@ -1,4 +1,4 @@
-# FirstRepo
+# Exercise1
 Link to my [**Linkedin**](https://www.linkedin.com/in/hannah-linnea-winter-62a63822b/)
 
 This is my favourite animal!
