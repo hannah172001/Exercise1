@@ -1,0 +1,61 @@
+---
+title: "Exercise1"
+author: "Hannah Winter"
+format: html
+editor: visual
+---
+
+### Exercice1 - Part B
+
+First, the *ggplot2* package is imported:
+
+```{r}
+library(ggplot2)
+```
+
+#### 1. Sampling Values
+
+After sampling 100 values from the log-normal distribution ($\mu$ = 5, $\sigma$ = 0.5), the obtained vector is transformed in a $100*1$ dimensional dataframe.
+
+```{r}
+set.seed(10)
+sample = rlnorm(100, meanlog = 5, sdlog = 0.5)
+df = data.frame(sample)
+```
+
+The sampled values have the mean $\mu$ = `r round(mean(sample),3)` and the standard deviation $\sigma$ = `r round(sd(sample),3)`.
+
+### 2. Visualisation
+
+#### 2.1. Creating the Histograms
+
+The library *ggplot2* is used to obtain a graphical representation of the sampled data. First, the histogram of the sample is plotted.
+
+```{r}
+ggplot(df, aes(x = sample)) + 
+  geom_histogram(color="lightblue", fill="black") + 
+  labs(title = "Histogram (linear scale)",
+       x = "value",
+       y = "count")
+```
+
+Next, the scale of the histogram is log-transformed.
+
+```{r}
+ggplot(df, aes(x = sample)) + 
+  geom_histogram(color="lightblue", fill="black") + 
+  labs(title = "Histogram (log scale)",
+       x = "value",
+       y = "count") + 
+  coord_trans(x = "log10")
+```
+
+#### 2.2. Creating the Violin-Plot
+
+```{r}
+ggplot(df, aes(x = "", y = sample)) + 
+  geom_violin(color="black", fill="lightblue") + 
+  labs(title = "Violin-Plot (linear scale)",
+       x = "sample",
+       y = "value")
+```
