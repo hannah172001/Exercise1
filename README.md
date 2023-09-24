@@ -1,5 +1,5 @@
 # Exercise1
-Link to my [**Linkedin**](https://www.linkedin.com/in/hannah-linnea-winter-62a63822b/)
+My favourite painter is [**Caspar David Friedrich**](https://de.wikipedia.org/wiki/Caspar_David_Friedrich).
 
-This is my favourite animal!
-![Sheep](https://animalhealthaustralia.com.au/wp-content/uploads/2021/03/shutterstock_112282007-1024x681.jpg)
+This is my favourite drawing by Friedrich:
+![Sheep](https://en.wikipedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg)
